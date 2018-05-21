@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QA Cinemas Ticket Booking</title>
+
+<script type="text/javascript" src="myScripts.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyles.css">
+</head>
+
+<body>
+<h1><a href="home.html">QA Cinemas</a></h1>
+
+
+<div class="filmSelect"> <p13>Choose a film:</p13> 
+<select class="filmMenu" name="film" id="film">
+ <option value="Deadpool">Deadpool 2</option>
+ <option value="Solo">Solo</option>
+</select>
+</div>
+
+<div class="daySelect"> <p13>Day of the Week: </p13><select class="dayMenu" id="weekday" onchange="printPrice()">
+  <option value="Monday" onclick="printPrice()">Monday</option>
+  <option value="Tuesday" onclick="printPrice()">Tuesday</option>
+  <option value="Wednesday" onclick="printPrice()">Wednesday</option>
+  <option value="Thursday" onclick="printPrice()">Thursday</option>
+  <option value="Friday" onclick="printPrice()">Friday</option>
+  <option value="Saturday" onclick="printPrice()">Saturday</option>
+  <option value="Sunday" onclick="printPrice()">Sunday</option>
+</select>
+</div>
+
+<div class="ticketSelect">
+<p2>Type</p2> <p3>Price</p3> <p4> Quantity</p4>
+<div> <p5>Standard</p5> <p6>£8</p6> <input class="standardNumber" type="number" name="standard" id="standard" value="0" min="0" max="15" onclick="printPrice()"/> </div>
+<div> <p7>OAP</p7> <p8>£6</p8><input class="OAPNumber" type="number" name="oap" id="oap" value="0" min="0" max="15" onclick="printPrice()"/> </div>
+<div> <p9>Student</p9> <p10>£6</p10><input class="studentNumber" type='number' name="student" id="student" value='0' min='0' max='15' onclick="printPrice()"/> </div>
+<div> <p11>Child</p11> <p12>£4</p12><input class="childNumber" type='number' name="child" id="child" value='0' min='0' max='15' onclick="printPrice()"/> </div>
+</div>
+
+<div class="totalPrice">
+<p13>Total price:</p13>
+<div class="insertPrice" id="inserts"> </div>
+</div>
+
+</body>
+
+</html>
