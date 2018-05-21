@@ -1,5 +1,3 @@
-var film;
-
 function printPrice(){
 
  var ticketPrice = [8, 6, 6, 4];
